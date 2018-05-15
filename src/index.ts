@@ -1,11 +1,9 @@
+import Socket from 'uws'
 import { Channel } from './modules/channel'
 import { EventEmitter } from './modules/emitter'
 import { encode, decode } from './modules/parser'
 import { logError, uint8ArrayToString, stringToArrayBuffer } from './utils/functions'
 import { Options, Configurations, Listener, CustomObject, Message } from './utils/types'
-
-declare const window: any
-const Socket: any = window.MozWebSocket || window.WebSocket
 
 export default class ClusterWS {
   public events: EventEmitter = new EventEmitter()

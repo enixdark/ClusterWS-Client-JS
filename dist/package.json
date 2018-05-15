@@ -21,5 +21,8 @@
 		"cluster",
 		"ws client",
 		"javascript"
-	]
+	],
+	"dependencies": {
+		"uws": "10.148.0"
+	}
 }

@@ -6,8 +6,8 @@
   "types": "index.d.ts",
   "author": "Dmitrii Goriunov",
   "scripts": {
-    "build:npm": "clusterws-builder -npm -src=src -dist=dist -type=browser",
-    "build:browser": "clusterws-builder -format=iife -src=src -dist=dist/browser -distFile=clusterws.js -type=browser && clusterws-builder -min -format=iife -src=src -dist=dist/browser -distFile=clusterws.min.js -type=browser",
+    "build:npm": "clusterws-builder -npm -src=src -dist=dist",
+    "build:browser": "clusterws-builder -format=iife -src=src -dist=dist/browser -distFile=clusterws.js && clusterws-builder -min -format=iife -src=src -dist=dist/browser -distFile=clusterws.min.js",
     "build:prod": "npm run build:npm && npm run build:browser",
     "publish": "npm run build:prod && cd dist && npm publish && cd .."
   },
@@ -30,5 +30,8 @@
     "cluster",
     "ws client",
     "javascript"
-  ]
+  ],
+  "dependencies": {
+    "uws": "10.148.0"
+  }
 }
