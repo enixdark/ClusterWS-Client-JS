@@ -32,6 +32,6 @@
     "javascript"
   ],
   "dependencies": {
-    "uws": "10.148.0"
+    "uws": "^10.148.1"
   }
 }
